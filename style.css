@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Bellefair', serif;
+    background-image: url("poze/bg1.jpg");
+    background-size: cover;
+}
+
+/*HEADER*/
+header{   
+background-color: #FFFFFE;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+align-items: flex-end;
+padding: 10px;
+width: 100%;
+}
+header h1{
+    font-family: 'Festive', cursive; 
+    font-size: 55px;
+    color: #3C295F;
+}
+header img{
+    width: 110px;
+    margin: 10px 20px 10px 0px ;
+}
+.brand-logo{
+    display: flex;
+    align-items: flex-end;
+}
+header input{
+    height: 35px;
+    border: none;
+    background-color: #FFFFFE;
+    border: 1px solid #c4c4be;
+    border-radius: 17px;
+    padding: 10px;
+}
+header input:hover{
+    background-color: #edf1cc;
+}
+header input:focus{
+    background-color: #edf1cc;
+    outline: none;
+}
+nav{
+    background-color: #BEC67E;
+    padding: 5px;
+    width: 100%;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+nav a{
+    text-decoration: none;
+    font-family: 'Bellefair', serif;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+/*CONTENT*/
+.content{
+    display: flex;
+    justify-content: end;
+    border-top:20px solid #FFFFFE;
+    border-bottom:20px solid #FFFFFE;
+}
+.content h2{
+    font-family: 'Bellefair', serif;
+    font-weight: 500;
+    font-size: 35px; 
+    margin: 5px 0px 15px 0px; 
+}
+aside{
+    background-color:#BEC67E; 
+    width: 20%;
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+aside h3{
+    font-family: 'Bellefair', serif;
+    text-align: center;
+    font-weight: 500;
+    font-size: 40px;
+}
+.effect{
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right, #3C295F,#3C295F 50%,#FFFFFE 50%);
+    background-size: 200% 100%;
+    background-position: -100%;
+    transition: all 0.5s ease-in-out;
+}
+.effect::before{
+    z-index: 0;
+    content: ' ';
+    background-color: #3C295F;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transition: all 0.5s ease-in-out;
+}
+.effect:hover::before{
+    width: 100%;
+}
+.effect:hover{
+    background-position: 0%;
+}
+
+main{
+    padding: 20px 0px 20px 0px ;
+}
+.description{
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background-color: rgba(248, 255, 225, 0.85);
+    background-color: rgba(255, 255, 254, 0.8);
+    color: rgb(43, 42, 42);
+    border-radius: 5px;
+    font-size: 18px;
+    line-height: 1.5;
+    color:#211735;
+}
+
+.articol{
+    width: 60%;
+    margin: auto;
+    margin-top: 30px;
+    padding: 20px; 
+    background-color: #FFFFFE;
+    background-color: rgba(255, 255, 254, 0.9);
+    color: rgb(20, 19, 19);
+    color: rgb(43, 42, 42);
+    border-radius: 5px;
+}
+.articol img{
+    width: 25%;
+    float: left;
+    margin: 10px 7px 0px 0px;
+    border-radius: 3px;
+    margin-right: 20px;
+}
+.articol h2{
+    color:#211735;
+    font-size: 35px;
+}
+.articol p{
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 7px;
+    text-align: justify;
+    color:#211735;
+}
+.articol ul{
+    font-size: 18px;
+    line-height: 1.5;
+    list-style-position: inside;
+    color:#211735;
+}
+
+
+/*FOOTER*/
+
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 0px;
+}
+.contact, .social{
+    background-color: rgba(248, 255, 225, 0.7);
+    border-radius: 3px;
+    padding: 30px;
+    width: 45%;
+}
+.contact h3, .social h3{
+    font-family: 'Bellefair', serif;
+    font-weight: 500;
+    font-size: 30px; 
+    text-align: center;
+    margin: 15px;
+}
+.contact p{
+    font-size: 18px;
+    line-height: 1.5; 
+    text-align: center;
+}
+
+.social ul{
+    text-align: center;
+    list-style-type: none;
+}
+.social ul li{
+    margin: 5px;
+    text-decoration: none;
+}
+.social a{
+    color:#211735;
+    font-size: 19px;
+    margin: 10px;
+    text-decoration: none;
+}
+.social a:hover{
+   text-decoration: underline;
+   color: #C34ED8;
+}
+.fab{
+    color: #C34ED8;
+    font-size: 30px;
+    margin: 5px;
+}
